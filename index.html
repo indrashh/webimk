@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda De Luxe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-black bg-opacity-90 text-white">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-6">
+          <img
+            src="img/logos-dua.png"
+            alt="Luxe Sports Car Rentals"
+            class="h-10"
+          />
+          <nav class="md:flex space-x-6">
+            <a
+              href="beranda.html"
+              class="hover:text-red-500 transition-colors border-b-2 border-red-500"
+              >Home</a
+            >
+            <a href="produk.html" class="hover:text-red-500 transition-colors"
+              >Product</a
+            >
+            <a href="sewa.html" class="hover:text-red-500 transition-colors"
+              >How To Rent</a
+            >
+            <a href="tentang.html" class="hover:text-red-500 transition-colors"
+              >About</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button
+            class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors"
+          >
+            Hubungi Kami
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="beranda" class="relative">
+      <!-- Hero Section  -->
+      <div class="relative h-screen flex items-center">
+        <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+        <video
+          autoplay
+          loop
+          muted
+          class="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="vid/car-vid.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="container mx-auto px-6 relative z-10 text-white text-center"
+        >
+          <h1 class="text-5xl font-bold mb-6 uppercase tracking-wide">
+            Rasakan Kemewahan Sejati
+          </h1>
+          <p class="text-xl mb-10 max-w-2xl mx-auto">
+            Nikmati pengalaman mengemudi mobil sport premium dengan De Luxe
+            Sports Car Rentals. Setiap perjalanan adalah petualangan yang tak
+            terlupakan.
+          </p>
+          <div class="flex justify-center space-x-6">
+            <a
+              href="produk.html"
+              class="px-8 py-3 bg-red-600 rounded-full hover:bg-red-700 transition-colors"
+            >
+              Jelajahi Product
+            </a>
+            <a
+              href="sewa.html"
+              class="px-8 py-3 border-2 border-white rounded-full hover:bg-white hover:text-black transition-colors"
+            >
+              Cek Cara Sewa
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keunggulan Section -->
+      <section class="container mx-auto py-16 px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            Mengapa Memilih Kami?
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Kami tidak sekadar menyewakan mobil, kami menghadirkan pengalaman
+            berkendara yang luar biasa
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all"
+          >
+            <div
+              class="bg-red-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Kualitas Terjamin</h3>
+            <p class="text-gray-600">
+              Armada mobil terbaru dengan kondisi prima dan terawat sempurna.
+              Setiap kendaraan melewati pemeriksaan ketat sebelum disewakan.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all"
+          >
+            <div
+              class="bg-red-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Harga Kompetitif</h3>
+            <p class="text-gray-600">
+              Pengalaman premium dengan biaya terjangkau. Kami menawarkan paket
+              sewa fleksibel sesuai kebutuhan Anda.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all"
+          >
+            <div
+              class="bg-red-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 text-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Layanan Premium</h3>
+            <p class="text-gray-600">
+              Tim profesional kami siap melayani dengan standar internasional.
+              Kenyamanan dan kepuasan Anda adalah prioritas utama kami.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimoni Section -->
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              Apa Kata Mereka?
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Pengalaman nyata dari pelanggan kami yang telah menikmati mobil
+              sport impian
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <p class="text-gray-600 mb-6 italic">
+                "Pengalaman menyewa mobil sport terbaik! Pelayanan profesional
+                dan mobil dalam kondisi prima."
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="https://via.placeholder.com/100x100"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-800">Rudi Tabuti</h4>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <p class="text-gray-600 mb-6 italic">
+                "Ferrari yang kami sewa benar-benar luar biasa! Performa mesin
+                yang menakjubkan."
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="https://via.placeholder.com/100x100"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-800">Ivan Gunawan</h4>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <p class="text-gray-600 mb-6 italic">
+                "Proses sewa sangat mudah dan cepat. Akan selalu kembali ke Luxe
+                Sports Car Rentals!"
+              </p>
+              <div class="flex items-center">
+                <img
+                  src="https://via.placeholder.com/100x100"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-gray-800">Adudu Bubadibako</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer (dari dokumen sebelumnya) -->
+    <footer class="bg-black text-gray-300 py-16">
+      <div class="container mx-auto grid md:grid-cols-4 gap-8 px-6">
+        <div>
+          <h4 class="text-xl font-bold text-white mb-4">
+            De Luxe Sports Car Rentals
+          </h4>
+          <p>Pengalaman menyetir mobil sport premium dengan layanan terbaik.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Armada</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >Ferrari</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >Lamborghini</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >Porsche</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >McLaren</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Layanan</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >Syarat & Ketentuan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >Asuransi</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-400 transition-colors"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Hubungi Kami</h4>
+          <p>+62 812-3456-7890</p>
+          <p>deluxeesportscar@gmail.com</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-red-400">Instagram</a>
+            <a href="#" class="text-gray-400 hover:text-red-400">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8 border-t border-gray-800 pt-4">
+        <p>&copy; 2024 De Luxe Sports Car Rentals.</p>
+      </div>
+    </footer>
+  </body>
+</html>
